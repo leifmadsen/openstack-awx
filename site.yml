@@ -1,0 +1,8 @@
+# vim: set ft=ansible
+---
+
+# Deploy to OpenStack servers
+- include: openstack.yml
+
+# Deploy AWX
+- include: awx.yml

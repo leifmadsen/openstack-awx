@@ -1,0 +1,2 @@
+instance_list:
+  - { name: awx, security_groups: "default,awx" }
