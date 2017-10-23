@@ -2,7 +2,7 @@
 ---
 
 # Deploy to OpenStack servers
-- include: openstack.yml
+- import_playbook: openstack.yml
 
 # Deploy AWX
-- include: awx.yml
+- import_playbook: awx.yml
