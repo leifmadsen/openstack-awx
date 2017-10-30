@@ -27,10 +27,7 @@
         timeout: 200
       register: instances
       with_items: "{{ instance_list }}"
-
-    - debug:
-        var: instances
-        verbosity: 1
+      no_log: True
 
     - name: Validate the host is available
       command: >
@@ -42,6 +39,7 @@
       delay: 5
       with_items: "{{ instances.results }}"
       changed_when: false
+      no_log: True
 
     - name: Add host to inventory
       add_host:
